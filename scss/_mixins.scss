@@ -1,0 +1,11 @@
+@mixin oponents {
+    border: 2px solid $third-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:$third-color;
+    border-radius: 5px;
+    background-color: $main-color;
+    position: absolute;
+    padding: 7px;
+    top: 30%;
+}

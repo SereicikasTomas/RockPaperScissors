@@ -1,0 +1,6 @@
+$main-color: rgb(0, 137, 150);
+$secondary-color: rgb(0, 51, 56);
+$third-color: white;
+$fourth-color: rgb(0, 51, 56);
+$lighter-main: lighten($main-color, 10%);
+$darker-third: darken($third-color, 30%);

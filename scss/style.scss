@@ -1,0 +1,89 @@
+@import 'normalize',
+        'variables',
+        'mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: $fourth-color;
+    color: $third-color;
+    text-align: center;
+    height: 80px;
+    padding: 20px 0;
+    h1{
+        text-transform: uppercase;
+    }
+}
+
+.scoreboard {
+    border: 6px solid $fourth-color;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 20%;
+    max-width: 20%;
+    height: 110px;
+    margin: 20px auto;
+    position: relative;
+    #user {
+        @include oponents;
+        left: -35px;
+    }
+    #comp {
+        @include oponents;
+        right: -35px;
+    }
+    #score {
+        text-align: center;
+        font-size: 70px;
+    }
+}
+
+.result{
+    text-align: center;
+    font-size: 30px;
+}
+
+.choices{
+    text-align: center;
+    .choice {
+        display: inline-block;
+    }
+}
+
+img{
+    border: 6px solid $fourth-color;
+    border-radius: 25%;
+    background-color: $main-color;
+    margin: 20px 10px;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: $lighter-main;
+        cursor: pointer;
+    }
+}
+
+#action-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.win-glow{
+    border: 6px solid rgb(0, 255, 51);
+    border-radius: 25%;
+}
+
+.lose-glow{
+    border: 6px solid red;
+    border-radius: 25%;
+}
+
+.tie-glow{
+    border: 6px solid $darker-third;
+    border-radius: 25%;
+}
